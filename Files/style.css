@@ -14,6 +14,16 @@ body,html
     width: 100%;
     height: 100%;
 }
+#cursor
+{
+   width: 20px;
+   height:20px;
+   background-color: aqua;
+   position: absolute;
+   z-index: 10;
+   transition: all linear 0.1s;
+   border-radius: 50px;
+}
 #nav
 {
     height: 20%;
@@ -22,12 +32,14 @@ body,html
     align-items: center;
     justify-content: space-between;
     padding: 2vw 10vw;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
 }
 #nav #logo
 {
     display: flex;
     align-items: center;
+    color: aqua;
+    gap:1em;
 }
 #nav #logo img
 {
@@ -44,22 +56,29 @@ body,html
 {
     text-decoration: none;
     border-radius: 50px;
-    border: 1px solid black;
+    border: 1px solid aqua;
     padding: .5vw;
+    color: white;
+    padding: .3vw 1vw;
+    width: fit-content;
+}
+#nav #logo:hover{
+    cursor: pointer;
 }
 #nav #tags a:hover
 {
-    background-color: red;
+    background-color:aqua;
     transform: scale(1.05);
 }
 body::-webkit-scrollbar
 {
    width: 8px;
    display:block;
+   background-color: rgb(16, 121, 225);
 }
 body::-webkit-scrollbar-thumb
 {
-    background-color: red;
+    background-color:aqua;
     border-radius: 50px;
 }
 *::selection
