@@ -65,12 +65,11 @@ html {
     width: fit-content;
     font-size: 1.1em;
 }
-
-#nav #logo:hover {
+#nav #logo:hover{
     cursor: pointer;
 }
 
-#nav #tags a:hover {
+#nav #tags a:hover{
     background-color: #12f7ff;
     transform: scale(1.05);
 }
