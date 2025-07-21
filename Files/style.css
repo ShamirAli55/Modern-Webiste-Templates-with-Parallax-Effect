@@ -109,3 +109,7 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
     pointer-events: none;
 }
+#moon
+{
+    mix-blend-mode: screen;
+}
