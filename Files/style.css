@@ -11,6 +11,7 @@ html {
     height: 100%;
     background: #1d002c;
     overflow-x: hidden;
+    color: white;
 }
 
 #cursor {
@@ -18,7 +19,7 @@ html {
     height: 20px;
     background-color: #12f7ff;
     position: absolute;
-    z-index: 10;
+    z-index: 999;
     transition: all linear 0.1s;
     border-radius: 50px;
 }
@@ -31,13 +32,14 @@ html {
     justify-content: space-between;
     padding: 2vw 10vw;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     top: 0%;
     left: 0%;
     z-index: 99;
 }
 
-#nav #logo {
+#nav #logo 
+{
     display: flex;
     align-items: center;
     color: #12f7ff;
@@ -102,6 +104,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     z-index: 98;
+    overflow: hidden;
 }
 #main img
 {
@@ -109,7 +112,71 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
     pointer-events: none;
 }
+#main h1
+{
+    position: absolute;
+    color: white;
+    filter: blur(.5px);
+    box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.349);
+    top:100%;
+    left:5%;
+    background-color: transparent;
+}
 #moon
 {
     mix-blend-mode: screen;
+}
+#about-us
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#about-us img
+{
+    position:absolute;
+    z-index: 98;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+.about-waterfall
+{
+  position: absolute;
+  top: 5%;
+}
+#info-box
+{
+    position: absolute;
+    top:0%;
+    z-index:99;
+    width: 50%;
+    left: 10%;
+    background-color: #1d002c;
+    padding-top: 3vw;
+}
+
+#info-box h2{
+    font-size: 2.5rem;
+}
+#info-box p{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+#info-box a
+{
+    background-color: #12f7ff;
+    color: #1d002c;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    transition:all .3s ease;
+    border: 2px solid #12f7ff;
+    font-weight: 500;
+}
+#info-box a:hover
+{
+    box-shadow: 0 0 1rem #12f7ff;
+    background-color: #1d002c;
+    color: #12f7ff;
 }
