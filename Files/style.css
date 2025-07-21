@@ -1,88 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body,html
-{
-  width: 100%;
-  height: 100%;
-}
-#main
-{
+
+body,
+html {
     width: 100%;
     height: 100%;
+    background: #1d002c;
 }
-#cursor
-{
-   width: 20px;
-   height:20px;
-   background-color: aqua;
-   position: absolute;
-   z-index: 10;
-   transition: all linear 0.1s;
-   border-radius: 50px;
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #12f7ff;
+    position: absolute;
+    z-index: 10;
+    transition: all linear 0.1s;
+    border-radius: 50px;
 }
-#nav
-{
+
+#nav {
     height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2vw 10vw;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
-#nav #logo
-{
+
+#nav #logo {
     display: flex;
     align-items: center;
-    color: aqua;
-    gap:1em;
+    color: #12f7ff;
+    gap: 1em;
+    text-transform: uppercase;
+    font-size: 15px;
 }
-#nav #logo img
-{
-    height:4vw;
+
+#nav #logo img {
+    height: 4vw;
 }
-#nav #tags
-{
+
+#nav #tags {
     display: flex;
     align-items: center;
     gap: 2vw;
     transition: all ease-in-out 3s;
 }
-#nav #tags a
-{
+
+#nav #tags a {
     text-decoration: none;
     border-radius: 50px;
-    border: 1px solid aqua;
+    border: 2px solid #12f7ff;
     padding: .5vw;
     color: white;
     padding: .3vw 1vw;
     width: fit-content;
+    font-size: 1.1em;
 }
-#nav #logo:hover{
+
+#nav #logo:hover {
     cursor: pointer;
 }
-#nav #tags a:hover
-{
-    background-color:aqua;
+
+#nav #tags a:hover {
+    background-color: #12f7ff;
     transform: scale(1.05);
 }
-body::-webkit-scrollbar
-{
-   width: 8px;
-   display:block;
-   background-color: rgb(16, 121, 225);
+
+body::-webkit-scrollbar {
+    width: 8px;
+    display: block;
+    background-color: rgb(16, 121, 225);
 }
-body::-webkit-scrollbar-thumb
-{
-    background-color:aqua;
+
+body::-webkit-scrollbar-thumb {
+    background-color: #12f7ff;
     border-radius: 50px;
 }
-*::selection
-{
+
+*::selection {
     color: white;
-    background-color:hsla(94, 62%, 57%, 0.509);
+    background-color: hsla(94, 62%, 57%, 0.509);
 }
