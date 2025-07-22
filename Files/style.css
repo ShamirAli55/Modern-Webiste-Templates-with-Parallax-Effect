@@ -19,27 +19,23 @@ html {
     height: 20px;
     background-color: #12f7ff;
     position: absolute;
-    z-index: 999;
+    z-index: 9999;
     transition: all linear 0.1s;
     border-radius: 50px;
 }
 
 #nav {
-    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 10vw;
+    padding: 1.5vw 10vw;
     flex-wrap: wrap;
     position: relative;
-    top: 0%;
-    left: 0%;
-    z-index: 99;
+    z-index: 1001;
 }
 
-#nav #logo 
-{
+#nav #logo {
     display: flex;
     align-items: center;
     color: #12f7ff;
@@ -69,7 +65,8 @@ html {
     width: fit-content;
     font-size: 1.1em;
 }
-#nav #logo:hover{
+
+#nav #logo:hover {
     cursor: pointer;
 }
 
@@ -92,90 +89,89 @@ body::-webkit-scrollbar-thumb {
 
 *::selection {
     color: white;
-    background-color:#12f7ff;
+    background-color: #12f7ff;
 }
 
-#main
-{
+#main {
     width: 100%;
     min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 98;
-    overflow: hidden;
+    z-index: 1000;
 }
-#main img
-{
+
+#main img {
     position: absolute;
     object-fit: cover;
     pointer-events: none;
 }
-#main h1
-{
+
+#main h1 {
     position: absolute;
     color: white;
     filter: blur(.5px);
     box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.349);
-    top:100%;
-    left:5%;
+    top: 100%;
+    left: 5%;
     background-color: transparent;
 }
-#moon
-{
+
+#moon {
     mix-blend-mode: screen;
 }
-#about-us
+
+#about-us 
 {
-    height: 100vh;
-    width: 100%;
     position: relative;
+    /* z-index: 1000; */
 }
-#about-us img
-{
-    position:absolute;
-    z-index: 98;
+
+#about-us img {
+    position: absolute;
+    z-index:1000;
     object-fit: cover;
     pointer-events: none;
 
 }
-.about-waterfall
-{
-  position: absolute;
-  top: 5%;
-}
-#info-box
-{
+
+.about-waterfall {
     position: absolute;
-    top:0%;
-    z-index:99;
-    width: 50%;
-    left: 10%;
-    background-color: #1d002c;
-    padding-top: 3vw;
+    top: 5%;
 }
 
-#info-box h2{
+#info-box {
+    position: absolute;
+    top: 0%;
+    z-index: 1003;
+   width: 50%;
+   left: 10%;
+   background-color: #1d002c;
+
+}
+
+#info-box h2 {
     font-size: 2.5rem;
 }
-#info-box p{
+
+#info-box p {
+    margin-bottom:1.5rem;
     margin-top: .5rem;
-    font-size: 1.5rem;
 }
-#info-box a
-{
+
+#info-box a {
     background-color: #12f7ff;
     color: #1d002c;
     text-decoration: none;
     border-radius: 25px;
     padding: .5rem 1rem;
-    transition:all .3s ease;
+    transition: all .3s ease;
     border: 2px solid #12f7ff;
     font-weight: 500;
 }
-#info-box a:hover
-{
+
+#info-box a:hover {
     box-shadow: 0 0 1rem #12f7ff;
     background-color: #1d002c;
     color: #12f7ff;
